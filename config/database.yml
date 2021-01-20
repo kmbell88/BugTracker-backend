@@ -24,7 +24,7 @@ default: &default
 development:
   <<: *default
   database: BugTracker_backend_development
-  username: test
+  username: kbell
   password: test
   port: 5432
   host: localhost
@@ -62,7 +62,7 @@ development:
 test:
   <<: *default
   database: BugTracker_backend_test
-  username: test
+  username: kbell
   password: test
   port: 5432
   host: localhost
