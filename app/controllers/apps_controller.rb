@@ -18,7 +18,6 @@ class AppsController < ApplicationController
   # POST /apps
   def create
     @app = App.new(app_params)
-    # @app.user_id = @user.id
 
     if @app.save
       render json: @app, status: :created, location: @app
